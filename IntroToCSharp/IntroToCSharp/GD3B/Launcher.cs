@@ -12,10 +12,12 @@ namespace IntroToCSharp.GD3B
         /// <par4m name="groupName">Group identifier</param>
         public static void Start(string ID = "GD")
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("Hello, World!!!");
             int x = 6;
             var z = 2 * x;
             Console.WriteLine(z);
+
+            Console.WriteLine("My Name is D");
 
             Vector3 v1 = new Vector3(1, 2, 3);
             Console.WriteLine(v1.ToString());
@@ -35,6 +37,8 @@ namespace IntroToCSharp.GD3B
 
             //BUG - NMCG - Does equals always work?
             var t = 10;
+
+           
         }
     }
 }
