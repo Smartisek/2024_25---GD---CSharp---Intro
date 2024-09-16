@@ -16,7 +16,7 @@ namespace IntroToCSharp.GD3A.Utilities
         {
             return Math.Abs(a - b) < epsilon;
         }
-
+        // overload 
         public static bool AreEqualWithin(double a, double b)
         {
             return Math.Abs(a - b) < FLOAT_TOLERANCE;
