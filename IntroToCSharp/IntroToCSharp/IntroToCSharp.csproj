@@ -8,6 +8,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Folder Include="GD3A\Exercises\" />
     <Folder Include="Scratch\" />
   </ItemGroup>
 
