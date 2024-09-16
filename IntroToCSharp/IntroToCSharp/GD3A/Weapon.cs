@@ -34,6 +34,14 @@
 
         //TODO - NMCG - Add ToString, Equals, Properties
 
+       public bool Equals(Weapon other)
+        {
+            return this.name == other.name
+                && this.damage == other.damage
+                && this.ammoCount == other.ammoCount;
+        }
+
+
         //RFR - NMCG - Make this run within 60-80 FPS
     }
 }
