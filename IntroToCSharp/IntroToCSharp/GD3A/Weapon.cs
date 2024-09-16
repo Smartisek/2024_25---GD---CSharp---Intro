@@ -1,4 +1,6 @@
-﻿namespace IntroToCSharp.GD3A
+﻿using IntroToCSharp.GD3A.Utilities;
+
+namespace IntroToCSharp.GD3A
 {
     internal class Weapon
     {
@@ -36,10 +38,23 @@
 
        public bool Equals(Weapon other)
         {
-            return this.name == other.name
-                && this.damage == other.damage
-                && this.ammoCount == other.ammoCount;
+            return MathUtility.AreEqualWithin(this.damage, other.damage, MathUtility.FLOAT_TOLERANCE);
+            //return this.name == other.name;     
+            // MathUtility mathUtility = new MathUtility();
+            // return mathUtility.AreEqualWithin(this.damage, other.damage, 0.0001f);
         }
+
+        /// <summary>
+        /// Compares two floats within a given epsilon 
+        /// </summary>
+        /// <param name="a">Float a</param>
+        /// <param name="b">Float b</param>
+        /// <param name="epsilon">Tolerance value</param>
+        /// <returns>True if less than epsilon</returns>
+        //public bool AreEqualWithin(float a, float b, float epsilon)
+        //{
+        //    return Math.Abs(a - b) < epsilon;
+        //}
 
 
         //RFR - NMCG - Make this run within 60-80 FPS
