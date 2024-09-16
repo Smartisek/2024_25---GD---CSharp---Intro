@@ -4,11 +4,14 @@ namespace IntroToCSharp.GD3A.Design.Exercise
 {
     public class GameObject
     {
-        float x, y, z;
         public string ID;
         public bool isActive;
+        float x, y, z;
+        
 
-        public GameObject(float x, float y, float z, string iD, bool isActive)
+    
+
+        public GameObject(string iD, bool isActive, float x, float y, float z)
         {
             this.x = x;
             this.y = y;
@@ -16,5 +19,6 @@ namespace IntroToCSharp.GD3A.Design.Exercise
             ID = iD;
             this.isActive = isActive;
         }
+        public GameObject() : this("Default", false, 0, 0, 0) { }
     }
 }
