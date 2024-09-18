@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Work\\2024-25\\Semester 1\\3DGED\\Repos\\2024_25---GD---CSharp---Intro\\IntroToCSharp\\IntroToCSharp\\IntroToCSharp.csproj": {}
+    "C:\\Users\\domal\\OneDrive\\Plocha\\DKIT\\3rd Year\\Game Engine Development\\IntroBeta\\IntroToCSharp\\IntroToCSharp\\IntroToCSharp.csproj": {}
   },
   "projects": {
-    "D:\\Work\\2024-25\\Semester 1\\3DGED\\Repos\\2024_25---GD---CSharp---Intro\\IntroToCSharp\\IntroToCSharp\\IntroToCSharp.csproj": {
+    "C:\\Users\\domal\\OneDrive\\Plocha\\DKIT\\3rd Year\\Game Engine Development\\IntroBeta\\IntroToCSharp\\IntroToCSharp\\IntroToCSharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Work\\2024-25\\Semester 1\\3DGED\\Repos\\2024_25---GD---CSharp---Intro\\IntroToCSharp\\IntroToCSharp\\IntroToCSharp.csproj",
+        "projectUniqueName": "C:\\Users\\domal\\OneDrive\\Plocha\\DKIT\\3rd Year\\Game Engine Development\\IntroBeta\\IntroToCSharp\\IntroToCSharp\\IntroToCSharp.csproj",
         "projectName": "IntroToCSharp",
-        "projectPath": "D:\\Work\\2024-25\\Semester 1\\3DGED\\Repos\\2024_25---GD---CSharp---Intro\\IntroToCSharp\\IntroToCSharp\\IntroToCSharp.csproj",
-        "packagesPath": "C:\\Users\\mcguinnn\\.nuget\\packages\\",
-        "outputPath": "D:\\Work\\2024-25\\Semester 1\\3DGED\\Repos\\2024_25---GD---CSharp---Intro\\IntroToCSharp\\IntroToCSharp\\obj\\",
+        "projectPath": "C:\\Users\\domal\\OneDrive\\Plocha\\DKIT\\3rd Year\\Game Engine Development\\IntroBeta\\IntroToCSharp\\IntroToCSharp\\IntroToCSharp.csproj",
+        "packagesPath": "C:\\Users\\domal\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\domal\\OneDrive\\Plocha\\DKIT\\3rd Year\\Game Engine Development\\IntroBeta\\IntroToCSharp\\IntroToCSharp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\mcguinnn\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\domal\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -38,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -59,7 +64,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
