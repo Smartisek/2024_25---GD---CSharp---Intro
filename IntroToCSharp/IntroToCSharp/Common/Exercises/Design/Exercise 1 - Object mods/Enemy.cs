@@ -1,6 +1,4 @@
-﻿using IntroToCSharp.Common.Exercises.Design.Exercise_1___Object_mods;
-
-namespace IntroToCSharp.Common.Exercise1
+﻿namespace IntroToCSharp.Common.Exercise1
 {
     /// <summary>
     /// Represents an enemy that can modify a game object
@@ -9,18 +7,16 @@ namespace IntroToCSharp.Common.Exercise1
     {
         private readonly int RESPAWN_RATE_MS = 60000; // 1 minute = 60,000ms
         public int respawnAfterMSecs;
-        private IDoDamage damage;
 
         public Enemy(string iD, bool isActive,
-            float x, float y, float z, IDoDamage damager)
+            float x, float y, float z)
             : base(iD, isActive, x, y, z)
         {
             this.respawnAfterMSecs = RESPAWN_RATE_MS;
-            this.damager = damager
         }
 
         public Enemy(string iD, bool isActive,
-            float x, float y, float z, int respawnAfterMSecs, IDoDamage damager)
+            float x, float y, float z, int respawnAfterMSecs)
             : base(iD, isActive, x, y, z)
         {
             this.respawnAfterMSecs = respawnAfterMSecs;
@@ -39,7 +35,7 @@ namespace IntroToCSharp.Common.Exercise1
 
         public override string ToString()
         {
-            return $"Enemy: {ID} at ({x}, {y}, {z}) respawning in {respawnAfterMSecs} millisecs";
+            return $"Enemy: {ID} at ({X}, {Y}, {Z}) respawning in {respawnAfterMSecs} millisecs";
         }
     }
 }

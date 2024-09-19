@@ -1,15 +1,39 @@
-﻿namespace IntroToCSharp.Common.Exercise1
+﻿using IntroToCSharp.Common.Data;
+
+namespace IntroToCSharp.Common.Exercise1
+
 {
     /// <summary>
     /// Represents a player within our game
     /// </summary>
     public class Player : GameObject
-    {
-        private static readonly float START_Y_POSITION = 10;
+    {//static points all to this one and doesnt make more copies 
+        //private static readonly float START_Y_POSITION = 10;
+        //private static readonly int PLAYER_HEALTH_MIN = 0;
+        //private static readonly int PLAYER_HEALTH_MAX = 10;
+
+        #region Fields
         public int health;
+        #endregion Fields
+
+        #region Properties
+        public int Health
+        {
+            get
+            {
+                return health;
+            }
+            set
+            {
+                health = value > GameConstants.PLAYER_HEALTH_MIN && value <= GameConstants.PLAYER_HEALTH_MAX 
+                    ? value : GameConstants.PLAYER_HEALTH_MIN;
+            }
+        }
+        #endregion Properties
+        #region Constructors
 
         public Player(string iD)
-         : base(iD, true, 0, START_Y_POSITION, 0)
+         : base(iD, true, 0, GameConstants.START_Y_POSITION, 0)
         {
             this.health = 100;
         }
@@ -27,10 +51,14 @@
         {
             this.health = health;
         }
+        #endregion Constructors
 
+        #region Methods - Housekeeping
         public override string ToString()
         {
-            return $"Player: {ID} at ({x}, {y}, {z}) with {health} health";
+            return $"Player: {ID} at ({X}, {Y}, {Z}) with {health} health";
         }
+
+        #endregion Methods - Housekeeping
     }
 }
